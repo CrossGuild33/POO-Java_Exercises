@@ -1,22 +1,31 @@
 package program;
 
 import exercises.Pessoa;
-
-import java.util.Scanner;
+import exercises.ContaBancaria;
 
 
 public class Main {
     public static void main(String[] args) {
         //exercise 1 - simple class
-        Scanner sc = new Scanner(System.in);
 
         Pessoa trabalhador = new Pessoa();
+
         trabalhador.nome = "Carlos";
-        trabalhador.idade = 36;
+        //exercise 2 - encapsulation
+        trabalhador.setIdade(36);
         trabalhador.profissao = "pedreiro";
 
         trabalhador.apresentar();
 
-        sc.close();
+        // exercise 3 - bank account
+
+        ContaBancaria cliente = new ContaBancaria();
+
+        cliente.setTitular("Francisco");
+        cliente.setSaldo(5000);
+        cliente.sacar(1000);
+        System.out.printf("\nO valor do %s após o saque é %.2f", cliente.getTitular(), cliente.getSaldo());
+        cliente.depositar(500);
+        System.out.printf("\nO valor do %s após o deposito é %.2f", cliente.getTitular(), cliente.getSaldo());
     }
 }
