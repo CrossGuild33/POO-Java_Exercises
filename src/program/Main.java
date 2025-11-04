@@ -19,10 +19,10 @@ public class Main {
 
         // exercise 3 - bank account
 
-        ContaBancaria cliente = new ContaBancaria();
+        ContaBancaria cliente = new ContaBancaria("Francisco",5000);
 
-        cliente.setTitular("Francisco");
-        cliente.setSaldo(5000);
+        //cliente.setTitular("Francisco");
+        //cliente.setSaldo(5000);
         cliente.sacar(1000);
         System.out.printf("\nO valor do %s após o saque é %.2f", cliente.getTitular(), cliente.getSaldo());
         cliente.depositar(500);
