@@ -1,8 +1,6 @@
 package program;
 
-import exercises.Pessoa;
-import exercises.ContaBancaria;
-
+import exercises.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,5 +25,11 @@ public class Main {
         System.out.printf("\nO valor do %s após o saque é %.2f", cliente.getTitular(), cliente.getSaldo());
         cliente.depositar(500);
         System.out.printf("\nO valor do %s após o deposito é %.2f", cliente.getTitular(), cliente.getSaldo());
+
+        // exercicio 4
+        ContaCorrente clienteCorrente = new ContaCorrente("Ricardo", 3000);
+
+        clienteCorrente.saqueCorrente(1000);
+        System.out.printf("\nO valor do %s ( conta corrente) após o saque é %.2f", clienteCorrente.getTitular(), clienteCorrente.getSaldo());
     }
 }
