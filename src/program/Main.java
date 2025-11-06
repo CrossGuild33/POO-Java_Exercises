@@ -26,10 +26,35 @@ public class Main {
         cliente.depositar(500);
         System.out.printf("\nO valor do %s após o deposito é %.2f", cliente.getTitular(), cliente.getSaldo());
 
-        // exercicio 4
+        // exercicio 4 - simple heritance
         ContaCorrente clienteCorrente = new ContaCorrente("Ricardo", 3000);
 
         clienteCorrente.saqueCorrente(1000);
-        System.out.printf("\nO valor do %s ( conta corrente) após o saque é %.2f", clienteCorrente.getTitular(), clienteCorrente.getSaldo());
+        System.out.printf("\nO valor do %s ( conta corrente) após o saque é %.2f", clienteCorrente.getTitular(),
+                clienteCorrente.getSaldo());
+
+
+        // exercicio 5 - polimorfism
+        Veiculo veiculo1 = new Bicicleta();
+        Veiculo veiculo2 = new Carro();
+
+        veiculo1.mover();
+        veiculo2.mover();
+
+        // exercício 6 - Heritance + constructors
+
+        Animal animal1 = new Cachorro();
+        Animal animal2 = new Gato();
+
+        animal1.emitirSom();
+        animal2.emitirSom();
+
+
+
+
+
+
     }
+
+
 }
