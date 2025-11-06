@@ -49,6 +49,12 @@ public class Main {
         animal1.emitirSom();
         animal2.emitirSom();
 
+        //exercicio 7 - polimorfism of parameters
+        Veterinario vet = new Veterinario();
+
+        vet.atender(new Cachorro());
+        vet.atender(new Gato());
+
 
 
 
