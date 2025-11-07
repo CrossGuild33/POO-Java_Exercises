@@ -55,6 +55,14 @@ public class Main {
         vet.atender(new Cachorro());
         vet.atender(new Gato());
 
+        //exercicio 8 - encapsulation and validation
+        Produto p = new Produto();
+
+        p.vender(3);  // ok
+        p.vender(20); // não pode, vai entrar na validação
+
+        p.setPreco(-50); // mensagem de erro
+        p.setEstoque(-1); // mensagem de erro
 
 
 
