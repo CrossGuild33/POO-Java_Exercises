@@ -1,6 +1,7 @@
 package program;
 
 import exercises.*;
+import exercises.exercise9.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -64,6 +65,12 @@ public class Main {
         p.setPreco(-50); // mensagem de erro
         p.setEstoque(-1); // mensagem de erro
 
+        // exercicio 9
+        Gerente gerente = new Gerente("Francisco", 6000, "Vendas");
+        Professor professor = new Professor("Ricardo", 4000, "História");
+
+        gerente.imprimirDados( );
+        professor.imprimirDados();
 
 
 
