@@ -2,6 +2,7 @@ package program;
 
 import exercises.*;
 import exercises.exercise9.*;
+import exercises.exercise10.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -71,6 +72,13 @@ public class Main {
 
         gerente.imprimirDados( );
         professor.imprimirDados();
+
+        // exercicio 10
+        Circulo circulo = new Circulo();
+        Quadrado quadrado = new Quadrado();
+
+        circulo.calcularArea(10);
+        quadrado.calcularArea(70);
 
 
 
